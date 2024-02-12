@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  width: 100%;
+
+  .imageBox {
+    z-index: -1;
+    flex: 1;
+    margin-top: 53px;
+  }
+
+  .descriptionBox {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .descriptionSection {
+    width: 80%;
+    margin: auto 0;
+    text-align: right;
+
+    .title {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 800;
+      color: #0381ff;
+    }
+
+    .subtitle {
+      margin: 32px 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .descriptionText {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .buttonContainer {
+      display: flex;
+      justify-content: flex-end;
+
+      .descriptionButton {
+        margin-top: 32px;
+        padding: 15px 20px;
+
+        font-size: 20px;
+        font-weight: 400;
+
+        background-color: white;
+        border: 0.5px solid rgb(0 0 0 / 16%);
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .main {
+    flex-direction: column;
+
+    .imageBox {
+      order: 2;
+    }
+
+    .descriptionBox {
+      order: 1;
+    }
+
+    .descriptionSection {
+      width: 100%;
+      text-align: center;
+
+      .descriptionText {
+        font-size: 14px;
+      }
+
+      .buttonContainer {
+        justify-content: center;
+      }
+    }
+  }
+}

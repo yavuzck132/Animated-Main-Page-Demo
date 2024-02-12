@@ -1,0 +1,95 @@
+.sharedImageProperties {
+  position: absolute;
+
+  padding: 10px;
+
+  background-color: rgb(255 255 255 / 70%);
+  backdrop-filter: blur(5px);
+  border: solid rgb(3 129 255 / 100%) 2px;
+  border-radius: 6px;
+}
+
+.stampImageWrapper {
+  top: 170px;
+  left: 250px;
+  opacity: 0;
+  animation: zoomIn 0.5s ease-out 0.9s forwards;
+
+  .stampImage {
+    width: 147.21px;
+    height: 113.33px;
+  }
+}
+
+.signatureImageWrapper {
+  top: 280px;
+  right: 265px;
+  opacity: 0;
+  animation: zoomIn 0.5s ease-out 0.7s forwards;
+
+  .signatureImage {
+    width: 149.84px;
+    height: 85.44px;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.expandSizeButton {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+
+  width: 38px;
+  height: 38px;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .stampImageWrapper {
+    left: 155px;
+
+    .stampImage {
+      width: 96.29px;
+      height: 74.13px;
+    }
+  }
+
+  .signatureImageWrapper {
+    right: 160px;
+
+    .signatureImage {
+      width: 98.01px;
+      height: 55.89px;
+    }
+  }
+
+  .closeButton {
+    top: -10px;
+    left: -10px;
+    width: 24.7px;
+    height: 24.7px;
+  }
+
+  .expandSizeButton {
+    right: -10px;
+    bottom: -10px;
+    width: 24.7px;
+    height: 24.7px;
+  }
+}

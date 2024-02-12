@@ -1,0 +1,29 @@
+.leftBar {
+  position: absolute;
+  bottom: 20px;
+  left: -25px;
+
+  opacity: 0;
+
+  animation: fadeIn 0.5s ease-out 0.8s forwards;
+}
+
+.rightBar {
+  position: absolute;
+  right: -25px;
+  bottom: 20px;
+
+  opacity: 0;
+
+  animation: fadeIn 0.5s ease-out 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,66 @@
+.fileImage {
+  position: absolute;
+  height: 409.53px;
+}
+
+.fileImage1 {
+  bottom: -25px;
+  left: 60px;
+
+  width: 249.89px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.5s ease-out 1s forwards;
+}
+
+.fileImage2 {
+  bottom: -35px;
+  left: 50px;
+
+  width: 269.89px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.5s ease-out 1.5s forwards;
+}
+
+.fileImage3 {
+  bottom: -45px;
+  left: 40px;
+
+  width: 289.89px;
+
+  opacity: 0;
+
+  animation: slideInFromBottom 0.5s ease-out 2s forwards;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .fileImage1 {
+    left: 30px;
+    width: 173.89px;
+  }
+
+  .fileImage2 {
+    left: 25px;
+    width: 183.89px;
+  }
+
+  .fileImage3 {
+    left: 20px;
+    width: 193.89px;
+  }
+}

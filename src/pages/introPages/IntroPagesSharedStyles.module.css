@@ -1,0 +1,49 @@
+.childWrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  .imageWrapper {
+    position: relative;
+    width: 367px;
+    height: 500px;
+
+    .phoneImage {
+      position: absolute;
+      bottom: 0;
+
+      width: 367px;
+      height: 500px;
+
+      opacity: 0;
+
+      animation: slideInFromBottom 0.5s ease-out 0.5s forwards;
+    }
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .childWrapper {
+    .imageWrapper {
+      width: 230.14px;
+      height: 466.67px;
+
+      .phoneImage {
+        width: 230.14px;
+        height: 466.67px;
+      }
+    }
+  }
+}

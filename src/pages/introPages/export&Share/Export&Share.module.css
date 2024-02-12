@@ -1,0 +1,110 @@
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  left: -30px;
+
+  opacity: 0;
+
+  animation: slideInArrow 0.5s ease-out 0.7s forwards;
+}
+
+.pdfImage {
+  position: absolute;
+  bottom: 15px;
+  left: -35px;
+
+  opacity: 0;
+
+  animation: slideInPDF 0.5s ease-out 1s forwards;
+}
+
+.jpgImage {
+  position: absolute;
+  bottom: 45px;
+  left: 110px;
+
+  opacity: 0;
+
+  animation: slideInJPG 0.5s ease-out 1.2s forwards;
+}
+
+.txtImage {
+  position: absolute;
+  right: -35px;
+  bottom: 13px;
+
+  opacity: 0;
+
+  animation: slideInTXT 0.5s ease-out 1.4s forwards;
+}
+
+@keyframes slideInArrow {
+  0% {
+    transform: translate(300%, 300%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInPDF {
+  0% {
+    transform: translate(200%, 300%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInJPG {
+  0% {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInTXT {
+  0% {
+    transform: translate(-200%, 300%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .arrow {
+    width: 15px;
+    height: 21.25px;
+  }
+
+  .pdfImage {
+    width: 105px;
+    height: 120px;
+  }
+
+  .jpgImage {
+    left: 73px;
+    width: 85.25px;
+    height: 105.5px;
+  }
+
+  .txtImage {
+    width: 105px;
+    height: 120px;
+  }
+}
